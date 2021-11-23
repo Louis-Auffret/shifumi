@@ -1,0 +1,21 @@
+
+body {
+    background-image: url(../img/CITY.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo-player {
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    border: 0.5rem solid rgb(206, 38, 120);
+    border-radius: 1rem;
+    margin: 2rem;
+}
