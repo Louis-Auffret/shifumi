@@ -1,4 +1,13 @@
+@font-face {
+    font-family: "Barcade";
+    src: url(/assets/fonts/Barcade-R4LM.otf) format("otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
 body {
     background-image: url(../img/CITY.jpg);
     background-repeat: no-repeat;
@@ -6,12 +15,16 @@ body {
     background-size: cover;
 }
 h1 {
-    font-size: 5rem;
+
+    font-family: "Barcade";
+    font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
     color:rgb(13, 247, 255);
-    text-shadow: 5px 5px  rgb(206, 38, 120);
+    text-shadow: 5px 2px 10px rgb(255, 2, 120);
+    margin-top: 1rem;
 }
+
 
 /*-------------------------
     – Menu –
@@ -75,20 +88,34 @@ h2{
 /*-------------------------
     – Page jeu –
 -------------------------*/
+#playerName {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+#menuPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .circle-compteur{
     width: 55px;
     height: 55px;
     background-color: none;
     border: 0.5rem solid rgb(206, 38, 120);
-    border-radius: 50%;
-    margin-left: 20px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
 }
 .dot-compteur {
     width: 30px;
     height: 30px;
     background-color: rgb(255, 255, 255);
     border: none;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 .logo-player {
     width: 10rem;
@@ -96,8 +123,41 @@ h2{
     background-color: #fff;
     border: 0.5rem solid rgb(206, 38, 120);
     border-radius: 10px;
-    margin: 2rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fa-play {
     transform: rotate(-90deg);
 }
+.fas, .far {
+    font-size: 5rem;
+    color: #322FD5;
+}
+/* bouton '?' */
+#menu-show {
+    border-radius: 10px;
+    border: 4px solid rgb(206, 38, 120);
+    background-color: #322FD5;
+    transition: 300ms;
+    position: absolute;
+    bottom: 0%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+#menu-show .fas {
+    font-size: 1.75rem;
+    margin: 10px;
+    color: #fff;
+    transition: 300ms;
+}
+#menu-show:hover {
+    border-radius: 10px;
+    border: 4px solid rgb(168, 0, 81);
+    background-color: #03009b;
+}
+#menu-show:hover .fas {
+    margin: 10px;
+    color: rgb(13, 247, 255);
+}
+/* --- ----- --- */
