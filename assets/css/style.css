@@ -15,6 +15,7 @@ body {
     background-size: cover;
 }
 h1 {
+
     font-family: "Barcade";
     font-size: 4vw;
     text-align: center;
@@ -31,8 +32,60 @@ h1 {
     – Menu –
 -------------------------*/
 
+#menu{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+}
 
+#pseudo-group p{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 20px;
+}
 
+#pseudo-bar{
+    border-radius: 10px;
+    font-weight:600;
+    font-size: 1.5rem;
+    font-style: italic;
+    border:none;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+#menu-group{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(12, 2, 7, 0.438);
+    border-radius: 30px;
+    padding:20px;
+}
+
+h2{
+    margin: 10px;
+    color: white;
+}
+
+#menu-group p{
+    color: white;
+}
+
+#textCheck{
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 255);
+    color: white;
+    text-shadow: 2px 3px rgb(61, 59, 59);
+    font-weight: 700;
+}
 
 /*-------------------------
     – Page jeu –
