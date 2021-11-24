@@ -15,45 +15,84 @@
 
     <h1>(Retro City)</h1>
     
-    <div class="container-fluid"></div>
-        <div id="menuPlayer" class="col-2">
+    <div class="container-fluid">
+        <div class="row">
+<!-- PLAYER - Gauche -->
+            <div id="menuPlayer" class="col-2 container-fluid">
 
-            <h2 id="playerName">PLAYER 1</h2>
+                <h2 id="playerName">Player 1</h2>
 
-            <div id="compteur" class="row">
-                <div id="circle-one" class="circle-compteur">
-                    <div id="dot-one" class="dot-compteur"></div>
+                <div id="cercle-compteur" class="row">
+                    <div id="circle-player-one" class="cercle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <div id="circle-player-two" class="cercle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <div id="circle-player-three" class="cercle">
+                        <div class="innerCircle"></div>
+                    </div>
                 </div>
-                <div id="circle-two" class="circle-compteur">
-                    <div id="dot-two" class="dot-compteur"></div>
+
+                <div id="bloc-player" class="blocs-style row">
+                    <div id="logo-circle-player" class="logo-circle logo-player">
+                        <i class="far fa-circle"></i>
+                    </div>
+                    <div id="logo-cross-player" class="logo-cross logo-player">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div id="logo-triangle-player" class="logo-triangle logo-player">
+                        <i class="fas fa-play"></i>
+                    </div>
                 </div>
-                <div id="circle-three" class="circle-compteur">
-                    <div id="dot-three" class="dot-compteur"></div>
+            </div>
+
+            <div id="field-set" class="row col-lg-8 col-md-12">
+                
+<!-- FIELD – Left-->
+                <div id="field-left" class="field col-lg-6 col-md-12">
+
+
+                </div>
+    <!-- FIELD – Right-->
+
+                <div id="field-right" class="field col-lg-6 col-md-12">
+
+
                 </div>
             </div>
+<!-- IA - Droite -->
+            <div id="menuIA" class="col-2 container-fluid">
 
+                <h2 id="playerName">CPU</h2>
 
-            <div id="logo-circle-player" class="logo-circle logo-player">
-                <i class="far fa-circle"></i>
+                <div id="cercle-compteur" class="row">
+                    <div id="circle-cpu-one" class="cercle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <div id="circle-cpu-two" class="cercle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <div id="circle-cpu-three" class="cercle">
+                        <div class="innerCircle"></div>
+                    </div>
+                </div>
+
+                <div id="bloc-cpu" class="blocs-style row">
+                    <div id="logo-circle-cpu" class="logo-circle logo-player">
+                        <i class="far fa-circle"></i>
+                    </div>
+                    <div id="logo-cross-cpu" class="logo-cross logo-player">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div id="logo-triangle-cpu" class="logo-triangle logo-player">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
             </div>
-            <div id="logo-cross-player" class="logo-cross logo-player">
-                <i class="fas fa-times"></i>
-            </div>
-            <div id="logo-triangle-player" class="logo-triangle logo-player">
-                <i class="fas fa-play"></i>
-            </div>
-        </div>
-
-        <div id="field" class="col-8">
-
-
-        </div>
-
-        <div id="menuIA" class="col-2 justify-content-center">
-
-
         </div>
     </div>
+    
     <button type="button" href="" id="menu-show"><i class="fas fa-question"></i></button>
 
 
