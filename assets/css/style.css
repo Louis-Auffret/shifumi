@@ -8,7 +8,8 @@ body {
 h1 {
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color:rgb(13, 247, 255);
+    text-shadow: 5px 5px  rgb(206, 38, 120);
 }
 
 .logo-player {
