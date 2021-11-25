@@ -35,18 +35,20 @@ $(function(){
 
 
 
-    $('.playerChoice').draggable({ revert: "invalid" });
+    $('.playerChoice').draggable({ revert: "valid", revert: true });
 
 
     $('.playerChoice').on('dragstart', function (event) {
         userChoice = $(this).attr('id');
-        $("#field-right").html('');
+        $("#field-right, #field-left").html('');
+        
     });  
 
 
     $('#field-left').droppable({
         drop: function(event, ui) {
-            $(this).css('background', '#fcdc12');
+            $(this).css('background', '#fcdc12').html(`<img class="image doubleSize" src="assets/img/${userChoice}.png">`);
+    
             fight();
         },
         over: function(event, ui) {
@@ -64,7 +66,7 @@ $(function(){
 
     function getCPUChoice() {
         cpuChoice = choices[Math.floor(Math.random() * choices.length)].id;
-        $("#field-right").css('background', '#fcdc12').html(`<img class="image" src="assets/img/${cpuChoice}.png">`);
+        $("#field-right").css('background', '#fcdc12').html(`<img class="image doubleSize" src="assets/img/${cpuChoice}.png" >`);
     }
 
     function fight() {
@@ -93,7 +95,7 @@ $(function(){
         if((cptCpu==winningGames)||(cptUser==winningGames)){
             if(cptCpu==winningGames) { alert('You lose');}
             else { alert ('You win');}
-
+            $("#field-right, #field-left").html('');
         }
 
         //Reset du choix du joueur. Bon chance!
