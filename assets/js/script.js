@@ -1,6 +1,9 @@
 $(function(){
     let userChoice;
     let cpuChoice;
+    let cptUser = 0;
+    let cptCpu = 0;
+    let winningGames = 3;
     let choices = document.querySelectorAll('.playerChoice');
         let audioOn = false; //variable qui permet d'éviter de rajouter la couche audio si on reclique sur 'START'.
 //SHOW HIDE des MENUS
@@ -78,10 +81,22 @@ $(function(){
                 || (userChoice == 'paper' && cpuChoice == 'rock')
             ){
                 console.log(`Player wins`);
+                cptUser++;
+                $(`#circle-player-${cptUser}`).css('visibility', 'visible');
             }
         else {
             console.log(`CPU wins`);
+            cptCpu++;
+            $(`#circle-cpu-${cptCpu}`).css('visibility', 'visible');
         }
+
+        if((cptCpu==winningGames)||(cptUser==winningGames)){
+            if(cptCpu==winningGames) { alert('You lose');}
+            else { alert ('You win');}
+
+        }
+
+        //Reset du choix du joueur. Bon chance!
 
     }
 

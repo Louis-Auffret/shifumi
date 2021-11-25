@@ -154,6 +154,10 @@ h2{
     margin-bottom: 30px;
     display: flex;
 }
+.innerCircle {
+    visibility:hidden;
+
+}
 .cercle {
     margin: 6px;
 }
