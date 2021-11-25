@@ -13,17 +13,17 @@ $(function(){
 
 
     
-    else if(function(){
-        (CPU=='scisors'&& user=='paper')
-        ||(CPU=='paper'&& user=='rock')
-        ||(CPU=='rock'&& user=='scisors')
-        computerScore++;
-        changeColor('computer');
-    })
-    else{
-        userScore++;
-        changeColor('player');
-    }
+    // else if(function(){
+    //     (CPU=='scisors'&& user=='paper')
+    //     ||(CPU=='paper'&& user=='rock')
+    //     ||(CPU=='rock'&& user=='scisors')
+    //     computerScore++;
+    //     changeColor('computer');
+    // })
+    // else{
+    //     userScore++;
+    //     changeColor('player');
+    // }
 
 
 
