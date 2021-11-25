@@ -16,7 +16,6 @@ $(function(){
         audioOn = true;
     }
 
-
 //-----//
 
     })
@@ -27,7 +26,8 @@ $(function(){
 
 
     
-    // else if(function(){
+
+    // else if({
     //     (CPU=='scisors'&& user=='paper')
     //     ||(CPU=='paper'&& user=='rock')
     //     ||(CPU=='rock'&& user=='scisors')
