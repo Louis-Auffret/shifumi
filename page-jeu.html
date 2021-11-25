@@ -20,11 +20,13 @@
             <input type="text" maxlength="9"name="pseudo" id="pseudo-bar" placeholder="Votre pseudo...">
         </div>
         <div id="menu-group">
-            <h2>RÈGLES :</h2>
-            <p>Il s’agit d’un jeu de Shifumi : <nobr>pierre (<i class="fas fa-circle"></i>) → ciseaux (<i class="fas fa-times"></i>) → feuille (<i class="fas fa-play"></i>).</nobr></p>
-            <p>Pour jouer, vous pouvez déplacer les symboles ou cliquer sur la touche <nobr>correspondante :</nobr><nobr> <i class="fas fa-circle"></i> (a)ou(←), <i class="fas fa-times"></i> (b)ou(↓), <i class="fas fa-play"></i> (c)ou(→).</nobr></p>
-            <p>Vous affrontez l’IA en 3 manches gagnantes.</p>
-            <p>À tout moment, vous pouvez rouvrir le menu pour vérifier les règles.</p>
+            <h2 id="close">RÈGLES :</h2>
+            <div id="p-group">
+                <p>Il s’agit d’un jeu de Shifumi : <nobr>pierre (<i class="fas fa-circle"></i>) → ciseaux (<i class="fas fa-times"></i>) → feuille (<i class="fas fa-play"></i>).</nobr></p>
+                <p>Pour jouer, vous pouvez déplacer les symboles ou cliquer sur la touche <nobr>correspondante :</nobr><nobr> <i class="fas fa-circle"></i> (a)ou(←), <i class="fas fa-times"></i> (b)ou(↓), <i class="fas fa-play"></i> (c)ou(→).</nobr></p>
+                <p>Vous affrontez l’IA en 3 manches gagnantes.</p>
+                <p>À tout moment, vous pouvez rouvrir le menu pour vérifier les règles.</p>
+            </div>
         </div>
         <img src="assets/img/scheme.png" id="scheme" alt="Cercle > Croix > Triangle > Cercle">
         <button type="button" id="start">START</button>
@@ -109,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" href="" id="menu-show"><i class="fas fa-question"></i></button>
+        <button type="button" id="menu-show"><i class="fas fa-question"></i></button>
     <!-- IMG MISS -->
         <img src="assets/img/miss.png" id="miss">
     <!-- IMG POINT -->
