@@ -9,25 +9,24 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<title>RETRO-CITY – Menu</title>
+<title>RETRO-CITY</title>
 </head>
 <body>
     <h1>(RETRO-CITY)</h1>
 
-    <div id="menu" class="">
+    <div id="menu">
         <div id="pseudo-group">
             <p>Saisir votre <nobr>pseudo :</nobr></p>
             <input type="text" maxlength="9"name="pseudo" id="pseudo-bar" placeholder="Votre pseudo...">
         </div>
         <div id="menu-group">
             <h2>RÈGLES :</h2>
-            <p>Il s’agit d’un jeu de Shifumi, les symboles changes mais fonctionnent de la même <nobr>façon :</nobr> 
-                pierre (<i class="fas fa-circle"></i>) → ciseaux (<i class="fas fa-times"></i>) → feuille (<i class="fas fa-play"></i>).</p>
-            <p>Pour jouer les symboles, vous pouvez soit les déplacer, soit cliquer sur la touche <nobr>correspondante :</nobr>
-                <i class="fas fa-circle"></i> (a)ou(←), <i class="fas fa-times"></i> (b)ou(↓), <i class="fas fa-play"></i> (c)ou(→).</p>
+            <p>Il s’agit d’un jeu de Shifumi : <nobr>pierre (<i class="fas fa-circle"></i>) → ciseaux (<i class="fas fa-times"></i>) → feuille (<i class="fas fa-play"></i>).</nobr></p>
+            <p>Pour jouer, vous pouvez déplacer les symboles ou cliquer sur la touche <nobr>correspondante :</nobr><nobr> <i class="fas fa-circle"></i> (a)ou(←), <i class="fas fa-times"></i> (b)ou(↓), <i class="fas fa-play"></i> (c)ou(→).</nobr></p>
             <p>Vous affrontez l’IA en 3 manches gagnantes.</p>
-            <p>À tout moment, vous pouvez rouvrir à nouveau le menu pour vérifier les règles.</p>
+            <p>À tout moment, vous pouvez rouvrir le menu pour vérifier les règles.</p>
         </div>
+        <img src="assets/img/scheme.png" id="scheme" alt="Cercle > Croix > Triangle > Cercle">
         <button type="button" id="start">START</button>
     </div>
 
@@ -38,7 +37,7 @@
     <!-- PLAYER - Gauche -->
                 <div id="menuPlayer" class="col-2 container-fluid">
 
-                    <h2 id="playerName">Player 1</h2>
+                    <nobr><h2 id="playerName"></h2></nobr>
 
                     <div id="cercle-compteur" class="row">
                         <div id="circle-player-one" class="cercle">
@@ -54,13 +53,13 @@
 
                     <div id="bloc-player" class="blocs-style row">
                         <div id="logo-circle-player" class="logo-circle logo-player">
-                            <i class="fas fa-circle"></i>
+                            <img src="assets/img/rock.png" class="play-element" alt="Cercle">
                         </div>
                         <div id="logo-cross-player" class="logo-cross logo-player">
-                            <i class="fas fa-times"></i>
+                            <img src="assets/img/scisors.png" class="play-element"  alt="Croix">
                         </div>
-                        <div id="logo-triangle-player" class="logo-triangle logo-player">
-                            <i class="fas fa-play"></i>
+                        <div id="logo-triangle-player" class="logo-triangle logo-player" alt="Triangle">
+                            <img src="assets/img/paper.png" class="play-element">
                         </div>
                     </div>
                 </div>
@@ -98,19 +97,23 @@
 
                     <div id="bloc-cpu" class="blocs-style row">
                         <div id="logo-circle-cpu" class="logo-circle logo-player">
-                            <i class="fas fa-circle"></i>
+                            <img src="assets/img/rock.png" class="play-element" alt="Cercle">
                         </div>
                         <div id="logo-cross-cpu" class="logo-cross logo-player">
-                            <i class="fas fa-times"></i>
+                            <img src="assets/img/scisors.png" class="play-element" alt="Croix">
                         </div>
-                        <div id="logo-triangle-cpu" class="logo-triangle logo-player">
-                            <i class="fas fa-play"></i>
+                        <div id="logo-triangle-cpu" class="logo-triangle logo-player" >
+                            <img src="assets/img/paper.png" class="play-element" alt="Triangle">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <button type="button" href="" id="menu-show"><i class="fas fa-question"></i></button>
+    <!-- IMG MISS -->
+        <img src="assets/img/miss.png" id="miss">
+    <!-- IMG POINT -->
+        <img src="assets/img/point.png" id="point">
     </div>
     
 
