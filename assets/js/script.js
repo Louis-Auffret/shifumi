@@ -26,9 +26,7 @@ $(function(){
     })
 
 
-
-    // $('.play-element').draggable({revert:"valid",revertDuration:600})
-    // $('#field-left').droppable({snap = true})
+    
     // else if(function(){
     //     (CPU=='scisors'&& user=='paper')
     //     ||(CPU=='paper'&& user=='rock')
@@ -36,7 +34,7 @@ $(function(){
     //     computerScore++;
     //     changeColor('computer');
     // })
-    // else {
+    // else{
     //     userScore++;
     //     changeColor('player');
     // }
