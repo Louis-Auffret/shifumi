@@ -41,6 +41,30 @@ h1 {
 img {
     width: 145px;
 }
+
+/*-------------------------
+    – Modal –
+-------------------------*/
+#cookiesModal {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 1px 12px #555;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    position: fixed;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
 /*-------------------------
     – Images points –
 -------------------------*/
@@ -48,14 +72,21 @@ img {
     display: none;
     width: 520px;
     position: absolute;
-    top: 42%; left: 50%;
+    top: 27%; left: 50%;
     transform: translate(-50%, -50%);
 }
 #point {
     display: none;
     width: 520px;
     position: absolute;
-    top: 38%; left: 50%;
+    top: 23%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+#draw {
+    display: none;
+    width: 520px;
+    position: absolute;
+    top: 23%; left: 50%;
     transform: translate(-50%, -50%);
 }
 /*-------------------------
@@ -328,6 +359,15 @@ h2{
         position: absolute;
         top: 475px; left: 50%;
         transform: translate(-50%, -50%);
+    }
+    #draw {
+        width: 320px;
+        position: absolute;
+        top: 485px; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .doubleSize {
+        width: 55%;
     }
     /*-------------------------
     – Menu –

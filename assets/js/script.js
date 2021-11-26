@@ -64,11 +64,8 @@ $('#close').click(function(){
     });
 
 
-
-
-
     function getCPUChoice() {
-        cpuChoice = choices[Math.floor(Math.random() * choices.length)].id;
+        cpuChoice = choices[Math.floor(Math.random() * choices.length)].id; //LA FONCTION random qui définit le choix CPU
         $("#field-right").css('background', 'linear-gradient(12deg, rgba(50,47,213,0.2) 5%, rgba(41,41,41,0.0) 50%, rgba(206,38,120,0.5) 100%)').html(`<img class="image doubleSize" src="assets/img/${cpuChoice}.png" >`);
     }
 
@@ -79,24 +76,21 @@ $('#close').click(function(){
 
         if (userChoice == cpuChoice) {
             console.log(`Egalité`);
+            //ICI afficher le MISS!
+            $('#draw').show();
+            $('#draw').fadeOut(1000);
         }
-        else if (
-                (userChoice == 'rock' && cpuChoice == 'scissors')
-                || (userChoice == 'scissors' && cpuChoice == 'paper')
+        else if (   //ICI spécifier les rapports de forces 
+                (userChoice == 'rock' && cpuChoice == 'scisors')
+                || (userChoice == 'scisors' && cpuChoice == 'paper')
                 || (userChoice == 'paper' && cpuChoice == 'rock')
             ){
                 console.log(`Player wins`);
                 cptUser++;
                 $(`#circle-player-${cptUser}`).css('visibility', 'visible');
                 //ICI afficher le POINT!
-                // var afficher =  setTimeout(function(){document.getElementById('point').style.display = "block";},3000);
-                // setTimeout($('#point').hide(),5000);
-                // setTimeout(function(){$('#point').show();}, 3000);
-                function openWin() {
-                    var myWindow = $('#point');
-                    myWindow().show();
-                    setTimeout(function(){ myWindow.hide() }, 3000);
-                  }
+                $('#point').show();
+                $('#point').fadeOut(1000);
 
             }
         else {
@@ -104,29 +98,25 @@ $('#close').click(function(){
             cptCpu++;
             $(`#circle-cpu-${cptCpu}`).css('visibility', 'visible');
                 //ICI afficher le MISS!
-            // $('#miss').show();
-            // var afficher =  setTimeout(function(){document.getElementById('miss').style.display = "block";},3000);
-            // setTimeout($('#miss').hide(),5000);
-            // setTimeout(function(){$('#miss').show();}, 3000);
-            function openWin() {
-                var myWindow = $('#miss');
-                myWindow().show();
-                setTimeout(function(){ myWindow.hide() }, 3000);
-              }
+                $('#miss').show();
+                $('#miss').fadeOut(1350);
             
+        }
+
+        function resetGame(){
+            cptUser = 0;
+            cptCpu = 0;
+            $('.innerCircle').css('visibility', 'hidden');   
         }
 
         if((cptCpu==winningGames)||(cptUser==winningGames)){
             if(cptCpu==winningGames) { alert('You lose');}
             else { alert ('You win');}
             $("#field-right, #field-left").html('');
+            resetGame();
         }
 
-        //Reset du choix du joueur. Bon chance!
-
     }
-
-
 
 
 })
