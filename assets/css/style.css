@@ -61,8 +61,40 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+/*-------------------------
+    – Marquee –
+-------------------------*/
+#marqueeResult {
+    display: none;
+}
+marquee{
+    display: flex;
+    justify-content: center;
+    font-family: "Barcade";
+    color: rgb(64, 224, 208);
+    text-shadow: 2px 4px 10px rgba(247, 26, 122, 0.9);
+    font-size: 150px;  
+}
 
+.marquee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+}
 
+#restart {
+    margin: 20px;
+    padding: 20px 45px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 255);
+    color: white;
+    text-shadow: 2px 3px rgb(61, 59, 59);
+    font-weight: 700;
+}
 /*-------------------------
     – Images points –
 -------------------------*/
@@ -558,6 +590,4 @@ img {
     }
     
 }
-
-
-
+    

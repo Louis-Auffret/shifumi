@@ -10,7 +10,7 @@ $(function(){
     let audioOn = false; //variable qui permet d'éviter de rajouter la couche audio si on reclique sur 'START'.
 //SHOW HIDE DES REGLES
 $('#close-bloc').click(function(){
-    $('#p-group').toggle();
+    $('#p-group, #text-petit').toggle();
     $('#close').html(($('#close').html()=="Afficher les Règles")? 'RÈGLES' : 'Afficher les Règles');
     });
 

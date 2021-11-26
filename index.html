@@ -18,6 +18,8 @@
 <body>
     <h1>(RETRO-CITY)</h1>
 
+    <!-- Première Page -->
+
     <div id="menu">
         <div id="pseudo-group">
             <p>Saisir votre <nobr>pseudo :</nobr></p>
@@ -26,7 +28,7 @@
         <div id="menu-group">
             <div id="close-bloc">
                 <h2 id="close">RÈGLES :</h2>
-                <h3>Cliquez-moi pour me masquer</h3>
+                <h3 id="text-petit">Cliquez-moi pour me masquer</h3>
             </div>
             <div id="p-group">
                 <p>Il s’agit d’un jeu de Shifumi : <nobr>pierre (<i class="fas fa-circle"></i>) → ciseaux (<i class="fas fa-times"></i>) → feuille (<i class="fas fa-play"></i>).</nobr></p>
@@ -39,7 +41,8 @@
         <button type="button" id="start">START</button>
     </div>
 
-    
+    <!--Page jeu -->
+
     <div id="page-jeu" class="display-none">        
         <div class="container-fluid">
             <div class="row">
@@ -121,7 +124,22 @@
     <!-- IMG DRAW -->
         <img src="assets/img/draw.png" id="draw">
     </div>
-    
+
+    <!-- Page Marquee -->
+
+    <div class="marquee" id="marqueeResult">
+
+        <div class="marqueeWin" id="youWin">
+            <marquee scrollamount ="30">(Félicitation! Tu as gagné le droit de rejouer!)</marquee>
+        </div>
+
+        <div class="marqueeLose" id="youLose">
+            <marquee scrollamount ="30">(Dommage! Tu as perdu, tu as le droit de rejouer!)</marquee>
+        </div>
+
+        <button type="button" id="restart">RESTART</button>
+    </div>
+
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
