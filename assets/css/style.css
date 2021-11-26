@@ -135,6 +135,9 @@ img {
     font-weight: 700;
     cursor: pointer;
 }
+#menu-group h2:hover {
+    color: #00FFFF;
+}
 h2{
     margin: 10px;
     color: white;
@@ -156,6 +159,9 @@ h2{
     color: white;
     text-shadow: 2px 3px rgb(61, 59, 59);
     font-weight: 700;
+}
+#start:hover {
+    background-color: rgb(207, 0, 197);
 }
 
 /*-------------------------
@@ -321,7 +327,7 @@ h2{
 /* --- ----- --- */
 
 
-@media (max-width: 800px){
+@media (max-width: 700px){
     /* #page-jeu {
     display: grid;
     grid-template-areas: 
@@ -380,7 +386,7 @@ h2{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 40px;
+        margin: 55px 30px;
     }
     #scheme {
         margin-top: 20px;
@@ -403,6 +409,7 @@ h2{
         border:none;
         margin-bottom: 55px;
         padding: 10px;
+        width: 260px;
     }
     #menu-group{
         display: flex;
@@ -417,10 +424,10 @@ h2{
     }
     h2{
         margin: 10px;
-        color: white;
+        color: #fff;
     }
     #menu-group p{
-        color: white;
+        color: #fff;
         font-size: 16px;
     }
     #start {
