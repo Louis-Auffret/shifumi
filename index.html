@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="preload" href="assets/fonts/Barcade.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Barcade.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/Barcade.ttf" as="font" type="font/ttf" crossorigin>
+
 <link rel="stylesheet" href="assets/css/style.css">
 <title>RETRO-CITY</title>
 </head>
@@ -21,7 +24,10 @@
             <input type="text" maxlength="9"name="pseudo" id="pseudo-bar" placeholder="Votre pseudo...">
         </div>
         <div id="menu-group">
-            <h2 id="close">RÈGLES :</h2>
+            <div id="close-bloc">
+                <h2 id="close">RÈGLES :</h2>
+                <h3>Cliquez-moi pour me masquer</h3>
+            </div>
             <div id="p-group">
                 <p>Il s’agit d’un jeu de Shifumi : <nobr>pierre (<i class="fas fa-circle"></i>) → ciseaux (<i class="fas fa-times"></i>) → feuille (<i class="fas fa-play"></i>).</nobr></p>
                 <p>Pour jouer, vous pouvez déplacer les symboles ou cliquer sur la touche <nobr>correspondante :</nobr><nobr> <i class="fas fa-circle"></i> (a)ou(←), <i class="fas fa-times"></i> (b)ou(↓), <i class="fas fa-play"></i> (c)ou(→).</nobr></p>

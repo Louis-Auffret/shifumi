@@ -63,10 +63,6 @@ img {
 }
 
 
-
-
-
-
 /*-------------------------
     – Images points –
 -------------------------*/
@@ -132,15 +128,21 @@ img {
     color: #fff;
 }
 #menu-group h2 {
-    font-weight: 700;
-    cursor: pointer;
+    color: white;
+    margin-top: 10px;
 }
 #menu-group h2:hover {
+}
+#menu-group h3 {
+    color: #fff;
+    font-size: 9px;
+}
+#close-bloc:hover h3, #close-bloc:hover h2 {
+    cursor: pointer;
     color: #00FFFF;
 }
-h2{
-    margin: 10px;
-    color: white;
+#p-group {
+    padding-top: 16px;
 }
 #menu-group p{
     color: white;
@@ -234,7 +236,7 @@ h2{
 .logo-player {
     box-sizing:border-box;
     width: 150px;
-    height: 150px;
+    /* height: 150px; */
     background-color: #fff;
     border: 0.5rem solid #f71A7A;
     border-radius: 10px;
@@ -351,7 +353,7 @@ h2{
         z-index: 1;
     }
     img {
-        width: 85px;
+        width: 120%;
     }
     /*-------------------------
     – Images points –
@@ -386,7 +388,7 @@ h2{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 55px 30px;
+        margin: 55px 10px;
     }
     #scheme {
         margin-top: 20px;
@@ -416,19 +418,22 @@ h2{
         flex-direction: column;
         background-color:rgba(12, 2, 7, 0.438);
         border-radius: 30px;
-        padding:20px 30px 25px 30px;
+        width: 90%;
+        padding:20px 22px;
     }
     #menu-group .fas {
         font-size: 11px;
         color: #fff;
     }
-    h2{
-        margin: 10px;
-        color: #fff;
-    }
     #menu-group p{
         color: #fff;
-        font-size: 16px;
+        font-size: 13px;
+    }
+    #menu-group h3 {
+        font-size: 7px;
+    }
+    #p-group {
+        padding-top: 10px;
     }
     #start {
         margin: 20px;
@@ -503,12 +508,12 @@ h2{
     }
     .logo-player {
         box-sizing:border-box;
-        width: 100px;
-        height: 100px;
+        width: 30%;
+        height: 90px;
         background-color: #fff;
         border: 0.5rem solid #f71A7A;
         border-radius: 10px;
-        margin: 5px 10px;
+        margin: 5px 5px;
     }
     .fa-play {
         transform: rotate(-90deg);
